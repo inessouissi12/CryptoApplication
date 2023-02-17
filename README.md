@@ -1,70 +1,41 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Overview:
+-The application allows users to get data for Cryptocurrencies of their choice. In the
+home page, you enter in the search bar the cryptocurrency name and then you click
+on it.
+After that, you get a chart of the current week prices. Also, you can get a chart on
+specific weeks by entering the begin date and the end date. (Make sure to enter
+dates in the right format and make sure that the cryptocurrency exists in that date.).
+Then, you click on the button “display” and you get the chart. You can also
+download those results on your computer in json format. The total operation time
+will be calculated and displayed.
+Components:
+1-Home component : contains home page that allows you to choose the
+cryptocurrency.
+2- Show component: contains information of the cryptocurrency chosen: chart
+prices of the current week. You can also chose specific weeks and display the
+chart.
+You can download those charts data on your computer in json format.
+the total operation time will be displayed.
+Components methods:
+1- Home component:
+- debounce(): A javascript function used to ensure that the task doesn't fire so often
+in order to brick browser performance.
+- searchCoins(): helps the user to search the cryptocurrency.
+- fetchCoins(): displays the cryptocurrencies.
+2- Show component:
+- fetchData(): displays the current week prices chart of the cryptocurrency.
+- handleClick() : displays the chart of the cryptocurrency after choosing specific
+dates.- formatDateWithoutTime(): convert the input value from date format to UNIX format
+to use it in the API as parameter to get the cryptocurrency data.
+Technologies used :
+-ReactJS, axios, chartJS, express, zustand, css,
+- I wanted to make it simple, optimized and easy to use with minimal downtime. I
+aimed to put less information in the screen so the user doesn’t get confused and
+gets what he wants easily.
+Steps:
+1-Node.js have to be installed.
+2- Open coiner folder
+3- run the command ‘npm install’ to install all of the necessary dependencies for the
+project.
+4- Run ‘npm start’.
+5- Open the project on http://localhost:3000/ on the browser.
