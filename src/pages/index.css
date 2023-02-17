@@ -1,0 +1,129 @@
+.box {
+    text-align: left;
+    border: black ridge 1px;
+    border-radius: 10px;
+    margin: 3px;
+    width: 20rem;
+    padding-left: 10px;
+    -webkit-text-fill-color: black;
+    
+  }
+
+  .main {
+    display: flex;
+    height: 50vh;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body{
+  background: #f2f2f2;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.search {
+  width: 50%;
+
+  
+}
+
+.searchTerm {
+  width: 20%;
+  border: 3px solid rgb(84, 105, 212);
+  padding: 10px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+  margin-bottom: 50px;
+  margin-right: 10px;
+}
+
+.searchTerm:focus{
+  color: #0b1314;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.chart1{
+    position: absolute;
+    top: 80px;
+    margin-left: 60%;
+  
+}
+
+.chart2{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    margin-left: 20px;
+  
+}
+
+
+
+
+  
+  .button{
+    
+   
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(84, 105, 212);
+    box-shadow: rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 12%) 0px 1px 1px 0px, rgb(84 105 212) 0px 0px 0px 1px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(60 66 87 / 8%) 0px 2px 5px 0px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 4px 8px;
+    display: inline-block;
+    min-height: 28px;
+    transition: background-color .24s,box-shadow .24s;
+    
+
+  }
+
+
+
+
+.coin_title{
+    font-size: 35px;
+
+}
+
+.week_title{
+    font-size: 35px;
+
+}
+.coin_image{
+  margin-right: 5px;
+  margin-top: 5px;
+}
