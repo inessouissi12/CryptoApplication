@@ -10,4 +10,5 @@ Steps to run the project:
 - Run ‘npm start’.
 - Open the project on http://localhost:3000/ on the browser.
 
-- The project includes the documentation file (documentation.pdf)
+The project includes the documentation file (documentation.pdf)
+The 'project screens.zip'file includes the project screens
