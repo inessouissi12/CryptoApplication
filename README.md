@@ -9,6 +9,3 @@ Steps to run the project:
 - run the command ‘npm install’ to install all of the necessary dependencies for the project.
 - Run ‘npm start’.
 - Open the project on http://localhost:3000/ on the browser.
-
-The project includes the documentation file (documentation.pdf)
-and the application screens (project screens.zip)
